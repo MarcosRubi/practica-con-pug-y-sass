@@ -1,0 +1,20 @@
+block config
+    include ../config/config
+
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=`${currentPage} | ${pageTitle}`
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/font.awesome.min.css")
+    body
+        block header
+            include ../includes/header
+        block content
+        block footer
+            include ../includes/footer
+        <script src="https://kit.fontawesome.com/87b8bff04b.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        script(src="js/scripts.js")

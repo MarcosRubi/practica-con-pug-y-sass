@@ -1,0 +1,22 @@
+header(class="container")
+    div(Class="menu-sm")
+        a(href="#" class="logo")
+            i(class="fab fa-linode icon")
+            span Startup
+        div(class="icon-menu")
+            label(for="btnMenu" onclick="javascript:mobile();") Menu
+    nav(class="menu" id="menu")
+            ul
+                each menu_item in menu
+                    li
+                        a(href=menu_item.url)=menu_item.title
+                        if menu_item.child.length > 0
+                            ul(class="submenu")
+                                each submenu_item in menu_item.child 
+                                    li
+                                        a(href=submenu_item.url)=submenu_item.title
+    div(class="buscar")
+        form(action="#", method="get" class="form-buscar" id="buscar")
+            input(type="search", name="s" placeholder="Buscar Aquí..." autocomplete="off")
+            button(type="submit"): i(class="fas fa-search icon")
+            a(href="#" class="descargar"): i(class="fa fa-cloud-download-alt icon")
