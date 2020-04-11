@@ -8,6 +8,5 @@
     function mobile() {
         $( "nav.menu" ).toggleClass( "toggle" );
     };
-    
-            
+ 
 
