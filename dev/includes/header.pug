@@ -8,13 +8,19 @@ header
     nav(class="menu" id="menu")
             ul
                 each menu_item in menu
-                    li
-                        a(href=menu_item.url)=menu_item.title
-                        if menu_item.child.length > 0
+                    if menu_item.title == 'Submenu'
+                        li
+                            a(href=menu_item.url)=menu_item.title
+                                i(class="fa fa-angle-down")
+                            if menu_item.child.length > 0
                             ul(class="submenu")
                                 each submenu_item in menu_item.child 
                                     li
                                         a(href=submenu_item.url)=submenu_item.title
+                    else
+                        li
+                            a(href=menu_item.url)=menu_item.title
+                        
     div(class="buscar")
         form(action="#", method="get" class="form-buscar" id="buscar")
             input(type="search", name="s" placeholder="Buscar Aquí..." autocomplete="off")

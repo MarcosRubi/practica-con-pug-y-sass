@@ -6,9 +6,9 @@
         
    
         //ANIMACION PARA IR AL PRINCIPIO DE LA PAGINA
-        $("#up").click(animate({
+        $("#up").click({
             scrollTop: 0
-        }, 2));                  
+        }, 2);                  
 
     });
     //MOSTRAR SUBMENU

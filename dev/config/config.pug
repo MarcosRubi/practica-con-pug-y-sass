@@ -49,3 +49,10 @@
     ]
 
 //- MIXINS
+
+mixin card(img, title, description)
+    div(Class="card-body")
+        img(src="images/"+img+".png")
+        h4(class="card__title")=title
+        p(class="card__description")=description
+        a(href="acerca-de.html" class="btn btn-primary card__button") Leer más

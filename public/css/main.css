@@ -347,7 +347,8 @@ a {
 .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  line-height: 18px; }
   .menu ul li {
     list-style: none; }
     .menu ul li a {
@@ -359,6 +360,8 @@ a {
       padding: 10px 20px; }
       .menu ul li a:hover {
         color: #05b993; }
+      .menu ul li a i {
+        padding-left: 5px; }
 
 .menu ul ul {
   position: absolute;
@@ -410,14 +413,16 @@ button[type="submit"] {
   -o-transition: all 500ms;
   transition: all 500ms; }
 
-button[type="submit"] {
+button[type="submit"],
+.btn-primary {
   margin-left: -6px;
   background: #05b993;
   padding: 3px 10px;
   color: #fff;
   border-radius: 3px;
   cursor: pointer; }
-  button[type="submit"]:hover {
+  button[type="submit"]:hover,
+  .btn-primary:hover {
     background: #09ddaf; }
 
 .descargar i {
@@ -525,6 +530,39 @@ footer {
   .banner img {
     width: 100%; }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background: #F8F9FA;
+  padding: 60px; }
+  .card-body {
+    width: 17%;
+    margin: 30px 0px;
+    padding: 40px 50px;
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px #b8b7b7;
+    box-shadow: 0px 0px 10px #b8b7b7; }
+    .card-body img {
+      border-radius: 100%; }
+  .card__title {
+    font-size: 1.4rem;
+    font-weight: 500; }
+  .card__description {
+    line-height: 1.5;
+    color: #6d6d6d;
+    font-weight: 300; }
+  .card__button {
+    display: block;
+    margin: 30px 0px;
+    padding: 10px 40px;
+    background: #705ecf; }
+    .card__button:hover {
+      background: #6736b6; }
+
 @media (max-width: 1260px) {
   .container {
     width: 98%; } }
@@ -585,6 +623,14 @@ footer {
       padding-left: 40px; }
     .banner__img {
       width: 70%; }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .card-body {
+      width: 40%;
+      margin: 20px auto; }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -599,3 +645,8 @@ footer {
       -ms-flex-pack: center;
       justify-content: center;
       padding: 0px; } }
+
+@media (max-width: 640px) {
+  .card-body {
+    width: 80%;
+    margin: 20px auto; } }
