@@ -4,9 +4,14 @@
              $("#menu ul ul").css("position","relative");
         });
         
+   
+        //ANIMACION PARA IR AL PRINCIPIO DE LA PAGINA
+        $("#up").click(animate({
+            scrollTop: 0
+        }, 2));                  
+
     });
+    //MOSTRAR SUBMENU
     function mobile() {
         $( "nav.menu" ).toggleClass( "toggle" );
     };
- 
-
