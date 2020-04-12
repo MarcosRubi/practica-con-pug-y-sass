@@ -7,7 +7,7 @@ body {
   font-family: poppins;
 }
 .container {
-  max-width: 90%;
+  max-width: 1200px;
   margin: 0px auto;
 }
 header {
@@ -137,9 +137,6 @@ button[type="submit"],
 .toggle {
   display: block !important;
 }
-.content{
-  min-height:1000px;
-}
 // FOOTER
 footer {
   display: flex;
@@ -180,6 +177,7 @@ footer {
 //BANNER
 .banner{
   display: flex;
+  padding: 60px;
   margin-top: 30px;
   align-items: center;
   &__content{
@@ -218,7 +216,7 @@ footer {
   display: flex;
   justify-content: space-around;
   background: #F8F9FA;
-  padding: 60px;
+  padding: 60px 0px;
   &-body{
     width: 17%;
     margin: 30px 0px;
@@ -246,6 +244,51 @@ footer {
     background: $purple;
     &:hover{
       background: rgb(103, 54, 182);
+    }
+  }
+}
+
+//EXPERIENCIA
+.experiencia{
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  .content{
+    align-items: center;
+    width: 60%;
+    padding-right: 40px;
+    .exp__subtema{
+      color: $green;
+      font-size: 1rem;
+    }
+    .exp__tema{
+      font-size: 2rem;
+      margin: 10px 0px;
+      line-height: 1.4;
+      width: 400px;
+    }
+    .exp__descripcion{
+      color: rgb(98, 98, 98);
+      font-weight: 300;
+      width: 500px;
+      line-height: 1.5;
+      font-size: 0.9rem;
+      letter-spacing: 1.5px;
+    }
+    .exp__list{
+      line-height: 2;
+      padding: 0px 20px;
+      margin-bottom: 50px;
+    }
+    .exp__button{
+      padding: 15px;
+      margin: 0px;
+    }
+  }
+  .img{
+    width: 40%;
+    img{
+      width: 100%;
     }
   }
 }
@@ -306,11 +349,38 @@ footer {
     &__content{
       width: 100%;
       padding-left: 40px;
+      h1{
+        margin: 0px;
+      }
     }
     &__img{
       width: 70%;
     }
   }
+  .experiencia{
+    flex-direction: column;
+    padding: 40px;
+    .content{
+      width: 100%;
+      .exp__tema{
+        width: 100%;
+      }
+      .exp__descripcion{
+        width: 100%;
+      }
+      .exp__list{
+        font-size: 1rem;
+      }
+      .exp__button{
+        padding: 15px;
+        margin: 0px;
+      }
+  }
+  .img{
+    margin: 20px auto;
+    width: 70%;
+  }
+}
   .card{
     flex-direction: column;
     &-body{
@@ -333,7 +403,7 @@ footer {
 @media(max-width: 640px){
  
   .card-body{
-    width: 80%;
+    width: 60%;
     margin: 20px auto;
   }
 }
