@@ -42,3 +42,22 @@ block content
             a(href="acerca-de.html" class="btn btn-primary exp__button") Leer más
         div(Class="img")
             img(src="images/b1.png")
+    section(class="servicios")
+        h3 Nuestros servicios
+        p Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        div(Class="card")
+            +service(
+                'fa fa-line-chart',
+                'Crecimiento del negocio',
+                'Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.'
+            )
+            +service(
+                'fa fa-usd',
+                'Plan financiero',
+                'Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.'
+            )
+            +service(
+                'fa fa-lightbulb-o',
+                'Servicios de negocios',
+                'Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.'
+            )
