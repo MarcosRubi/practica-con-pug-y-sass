@@ -456,6 +456,48 @@ button[type="submit"],
 .toggle {
   display: block !important; }
 
+.estadisticas {
+  background: #fff;
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .estadisticas .img {
+    width: 50%; }
+    .estadisticas .img img {
+      width: 100%; }
+  .estadisticas .content h3 {
+    font-size: 2rem; }
+  .estadisticas .content h4 {
+    width: 350px;
+    color: #525151;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2; }
+  .estadisticas .content p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    width: 700px; }
+  .estadisticas .content .content__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .estadisticas .content .dato {
+    width: 200px;
+    margin: 30px 0px;
+    overflow: hidden; }
+    .estadisticas .content .dato p {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin: 5px 0px; }
+    .estadisticas .content .dato span {
+      color: #525151;
+      font-size: 0.9rem; }
+
 .suscribirse {
   padding: 60px;
   background: #f8f8f8;
@@ -735,6 +777,15 @@ footer {
     padding: 0; }
     .menu ul ul li a {
       color: #202428; }
+  .estadisticas .img {
+    width: 45%; }
+  .estadisticas .content {
+    padding-left: 40px;
+    width: 50%; }
+    .estadisticas .content p {
+      width: 400px; }
+    .estadisticas .content .dato {
+      width: 170px; }
   .suscribirse .center {
     width: 80%;
     margin: 0px auto; } }
@@ -790,6 +841,22 @@ footer {
   .servicios .card-body {
     margin: 10px auto;
     width: 40%; }
+  .estadisticas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .estadisticas .img {
+      width: 70%; }
+    .estadisticas .content {
+      width: 100%; }
+      .estadisticas .content p {
+        width: 90%;
+        line-height: 2; }
+      .estadisticas .content h4 {
+        width: 90%; }
+      .estadisticas .content .content__data .dato {
+        width: 400px; }
   .suscribirse {
     padding: 60px 0px; }
     .suscribirse .center {
@@ -814,4 +881,13 @@ footer {
     width: 60%;
     margin: 20px auto; }
   .servicios h3 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .estadisticas h3 {
+    width: 350px; }
+  .content__data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .content__data .dato {
+      margin: 10px 0px !important; } }
