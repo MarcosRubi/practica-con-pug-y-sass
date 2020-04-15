@@ -315,10 +315,6 @@ body {
   font-size: 16px;
   font-family: poppins; }
 
-.container {
-  max-width: 1200px;
-  margin: 0px auto; }
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,7 +379,8 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
-input[type="search"] {
+input[type="search"],
+input[type="email"] {
   outline: none;
   padding-left: 15px;
   color: #292929; }
@@ -458,6 +455,49 @@ button[type="submit"],
 
 .toggle {
   display: block !important; }
+
+.suscribirse {
+  padding: 60px;
+  background: #f8f8f8;
+  text-align: Center; }
+  .suscribirse .center {
+    width: 70%;
+    margin: 0px auto; }
+  .suscribirse i {
+    background: #05b993;
+    padding: 25px;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 100%; }
+  .suscribirse h3 {
+    font-size: 2rem;
+    font-weight: 700; }
+  .suscribirse p {
+    color: #525151;
+    line-height: 1.7;
+    font-size: 1rem;
+    letter-spacing: 1px; }
+  .suscribirse input[type="email"] {
+    height: 50px;
+    width: 70%;
+    border: none;
+    -webkit-box-shadow: 0px 0px 15px #e7e7e7;
+    box-shadow: 0px 0px 15px #e7e7e7;
+    border-radius: 5px 0px 0px 5px; }
+  .suscribirse input[type="submit"] {
+    width: 25%;
+    height: 53px;
+    border: none;
+    margin-left: -5px;
+    background: #705ecf;
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms; }
+    .suscribirse input[type="submit"]:hover {
+      background: #7c68e4; }
 
 footer {
   display: -webkit-box;
@@ -694,7 +734,10 @@ footer {
     background: transparent;
     padding: 0; }
     .menu ul ul li a {
-      color: #202428; } }
+      color: #202428; }
+  .suscribirse .center {
+    width: 80%;
+    margin: 0px auto; } }
 
 @media (max-width: 860px) {
   body {
@@ -718,7 +761,8 @@ footer {
     flex-direction: column;
     padding: 40px; }
     .experiencia .content {
-      width: 100%; }
+      width: 100%;
+      padding: 0px 40px; }
       .experiencia .content .exp__tema {
         width: 100%; }
       .experiencia .content .exp__descripcion {
@@ -746,6 +790,10 @@ footer {
   .servicios .card-body {
     margin: 10px auto;
     width: 40%; }
+  .suscribirse {
+    padding: 60px 0px; }
+    .suscribirse .center {
+      width: 90%; }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
